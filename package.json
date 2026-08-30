@@ -4,6 +4,7 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
+		 "start": "bun run src/index.ts",
 		"format": "bunx --bun @biomejs/biome lint --write",
 		"lint": "bunx --bun @biomejs/biome lint --write",
 		"check": "bunx --bun @biomejs/biome check --write"

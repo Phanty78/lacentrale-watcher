@@ -1,16 +1,21 @@
 {
-  "name": "lacentrale-watcher",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@biomejs/biome": "2.5.11",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "playwright": "^1.62.1"
-  }
+	"name": "lacentrale-watcher",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"format": "bunx --bun @biomejs/biome lint --write",
+		"lint": "bunx --bun @biomejs/biome lint --write",
+		"check": "bunx --bun @biomejs/biome check --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.11",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"playwright": "^1.62.1"
+	}
 }
